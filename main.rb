@@ -5,8 +5,8 @@ def display_git(cmd)
   menu
 end
 
-def self.menu
-  print '1: Enter! Git command'.colorize(:yellow)
+def menu
+  puts '1: Enter git command'.colorize(:blue)
   puts '2: Exit'.colorize(:red)
   choice = gets.to_i
   case choice
@@ -17,7 +17,7 @@ def self.menu
   when 2
     exit
   else
-    puts 'Invalid choice'
+    puts 'Invalid choice please try again'
     menu
   end
 end
